@@ -9,12 +9,12 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: Helvetica, Arial, sans-serif;
         }
 
         body {
             line-height: 1.6;
-            color: #333;
+            color: #000;
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
@@ -25,27 +25,22 @@
             text-align: center;
             font-size: 3em;
             margin: 20px 0;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
         }
 
         .hero {
             text-align: center;
             padding: 40px 20px;
-            background: linear-gradient(135deg, #FFD700, #FFF8DC);
-            border-radius: 20px;
+            background: #fff;
+            border: 1px solid #000;
+            border-radius: 2px;
             margin-bottom: 40px;
         }
 
         .hero h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
-            color: #333;
+            font-weight: bold;
+            letter-spacing: -0.5px;
         }
 
         .feature-grid {
@@ -56,41 +51,45 @@
         }
 
         .feature-box {
-            background: #FFF8DC;
+            background: #fff;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 2px 15px rgba(255, 215, 0, 0.2);
-            transition: transform 0.3s ease;
+            border: 1px solid #000;
+            border-radius: 2px;
         }
 
-        .feature-box:hover {
-            transform: translateY(-5px);
+        .feature-box h3 {
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
         }
 
         .examples {
-            background: #FFF8DC;
+            background: #fff;
             padding: 20px;
-            border-radius: 10px;
+            border: 1px solid #000;
+            border-radius: 2px;
             margin: 20px 0;
-            border: 2px solid #FFD700;
+        }
+
+        .examples h2 {
+            font-weight: bold;
+            letter-spacing: -0.5px;
         }
 
         .cta-button {
             display: inline-block;
-            background: #FFD700;
-            color: #333;
+            background: #000;
+            color: #fff;
             padding: 12px 24px;
-            border-radius: 25px;
+            border-radius: 2px;
             text-decoration: none;
             font-weight: bold;
             margin: 20px 0;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+            transition: all 0.2s ease;
         }
 
         .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+            background: #333;
         }
 
         .faq {
@@ -102,27 +101,29 @@
         }
 
         .faq-question {
-            background: #FFF8DC;
+            background: #fff;
             padding: 15px;
             cursor: pointer;
-            border-radius: 5px;
+            border: 1px solid #000;
+            border-radius: 2px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border: 1px solid #FFD700;
+            font-weight: bold;
         }
 
         .faq-question:hover {
-            background: #FFD700;
+            background: #f8f8f8;
         }
 
         .faq-answer {
             display: none;
             padding: 15px;
             background: #fff;
-            border: 1px solid #FFD700;
-            margin-top: 5px;
-            border-radius: 5px;
+            border: 1px solid #000;
+            border-top: none;
+            margin-top: -1px;
+            border-radius: 0 0 2px 2px;
         }
 
         .testimonials {
@@ -133,30 +134,54 @@
         }
 
         .testimonial {
-            background: #FFF8DC;
+            background: #fff;
             padding: 20px;
-            border-radius: 10px;
-            border: 1px solid #FFD700;
+            border: 1px solid #000;
+            border-radius: 2px;
         }
 
         .nav-menu {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 40px;
             padding: 20px 0;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #000;
         }
 
         .nav-menu a {
-            color: #333;
+            color: #000;
             text-decoration: none;
             font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background 0.3s ease;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
         }
 
         .nav-menu a:hover {
-            background: #FFD700;
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-weight: bold;
+            letter-spacing: -0.5px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li:before {
+            content: "–";
+            position: absolute;
+            left: 0;
         }
     </style>
 </head>
@@ -190,17 +215,17 @@
 
     <div class="feature-grid">
         <div class="feature-box">
-            <h3>🌅 Breakfast Gatherings</h3>
+            <h3>Breakfast Gatherings</h3>
             <p>Join curated morning meetups with exceptional achievers from various fields. Share inspiration over breakfast in cities like NYC, SF, London, Paris, Tokyo, and more.</p>
         </div>
 
         <div class="feature-box">
-            <h3>⏰ Morning Routines</h3>
+            <h3>Morning Routines</h3>
             <p>Get exclusive insights into the morning routines of world-class performers. Learn how they start their day and apply their practices to your life.</p>
         </div>
 
         <div class="feature-box">
-            <h3>🤝 Networking</h3>
+            <h3>Networking</h3>
             <p>Connect with like-minded early risers who are committed to personal growth and achievement in their respective fields.</p>
         </div>
     </div>
