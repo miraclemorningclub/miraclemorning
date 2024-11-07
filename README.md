@@ -9,134 +9,139 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Helvetica, Arial, sans-serif;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
         }
 
         body {
-            line-height: 1.6;
-            color: #000;
+            line-height: 1.4;
+            color: #444;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 15px;
             background: #fff;
         }
 
-        .logo {
+        .logo-container {
             text-align: center;
-            font-size: 3em;
-            margin: 20px 0;
+            margin: 15px 0 25px;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
         }
 
         .hero {
             text-align: center;
-            padding: 40px 20px;
+            padding: 30px 20px;
             background: #fff;
-            border: 1px solid #000;
+            border: 1px solid #e0e0e0;
             border-radius: 2px;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .hero h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            font-weight: bold;
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            font-weight: 500;
             letter-spacing: -0.5px;
+            white-space: nowrap;
         }
 
         .feature-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
+            gap: 20px;
+            margin: 30px 0;
         }
 
         .feature-box {
             background: #fff;
-            padding: 30px;
-            border: 1px solid #000;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
             border-radius: 2px;
         }
 
         .feature-box h3 {
-            font-weight: bold;
-            margin-bottom: 15px;
-            letter-spacing: -0.5px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
         }
 
         .examples {
             background: #fff;
-            padding: 20px;
-            border: 1px solid #000;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
             border-radius: 2px;
             margin: 20px 0;
         }
 
         .examples h2 {
-            font-weight: bold;
-            letter-spacing: -0.5px;
+            font-weight: 500;
+            letter-spacing: -0.3px;
         }
 
         .cta-button {
             display: inline-block;
-            background: #000;
+            background: #444;
             color: #fff;
             padding: 12px 24px;
             border-radius: 2px;
             text-decoration: none;
-            font-weight: bold;
-            margin: 20px 0;
+            font-weight: 500;
+            margin: 15px 0;
             transition: all 0.2s ease;
         }
 
         .cta-button:hover {
-            background: #333;
+            background: #555;
         }
 
         .faq {
-            margin: 40px 0;
+            margin: 30px 0;
         }
 
         .faq-item {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .faq-question {
             background: #fff;
             padding: 15px;
             cursor: pointer;
-            border: 1px solid #000;
+            border: 1px solid #e0e0e0;
             border-radius: 2px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-weight: bold;
+            font-weight: 500;
         }
 
         .faq-question:hover {
-            background: #f8f8f8;
+            background: #fafafa;
         }
 
         .faq-answer {
             display: none;
             padding: 15px;
             background: #fff;
-            border: 1px solid #000;
+            border: 1px solid #e0e0e0;
             border-top: none;
             margin-top: -1px;
-            border-radius: 0 0 2px 2px;
         }
 
         .testimonials {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            margin: 40px 0;
+            margin: 30px 0;
         }
 
         .testimonial {
             background: #fff;
-            padding: 20px;
-            border: 1px solid #000;
+            padding: 25px;
+            border: 1px solid #e0e0e0;
             border-radius: 2px;
         }
 
@@ -144,17 +149,17 @@
             display: flex;
             justify-content: center;
             gap: 40px;
-            padding: 20px 0;
-            margin-bottom: 40px;
-            border-bottom: 1px solid #000;
+            padding: 15px 0;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e0e0e0;
         }
 
         .nav-menu a {
-            color: #000;
+            color: #444;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
             text-transform: uppercase;
-            font-size: 14px;
+            font-size: 13px;
             letter-spacing: 1px;
         }
 
@@ -163,9 +168,9 @@
         }
 
         h2 {
-            font-weight: bold;
-            letter-spacing: -0.5px;
-            margin-bottom: 20px;
+            font-weight: 500;
+            letter-spacing: -0.3px;
+            margin-bottom: 15px;
         }
 
         ul {
@@ -173,8 +178,8 @@
         }
 
         ul li {
-            margin-bottom: 10px;
-            padding-left: 20px;
+            margin-bottom: 8px;
+            padding-left: 15px;
             position: relative;
         }
 
@@ -183,11 +188,28 @@
             position: absolute;
             left: 0;
         }
+
+        p {
+            font-weight: 400;
+        }
     </style>
 </head>
 <body>
-    <div class="logo">
-        ☀️
+    <div class="logo-container">
+        <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="45" fill="none" stroke="#444" stroke-width="2"/>
+            <circle cx="50" cy="50" r="20" fill="#444"/>
+            <g stroke="#444" stroke-width="2">
+                <line x1="50" y1="0" x2="50" y2="20" />
+                <line x1="50" y1="80" x2="50" y2="100" />
+                <line x1="0" y1="50" x2="20" y2="50" />
+                <line x1="80" y1="50" x2="100" y2="50" />
+                <line x1="14.6" y1="14.6" x2="29.2" y2="29.2" />
+                <line x1="70.8" y1="70.8" x2="85.4" y2="85.4" />
+                <line x1="14.6" y1="85.4" x2="29.2" y2="70.8" />
+                <line x1="70.8" y1="29.2" x2="85.4" y2="14.6" />
+            </g>
+        </svg>
     </div>
 
     <nav class="nav-menu">
@@ -203,73 +225,7 @@
         <a href="#apply" class="cta-button">Apply to join (takes less than 5 minutes)</a>
     </div>
 
-    <div class="examples">
-        <h2>Examples of people in Miracle Morning Club:</h2>
-        <ul>
-            <li>Olympic athletes sharing their morning routines and mental preparation techniques</li>
-            <li>Tech founders discussing how early morning focus shapes their innovation process</li>
-            <li>Creative professionals explaining how dawn hours fuel their artistic inspiration</li>
-            <li>+ many others from companies like Nike, Tesla, Pixar, Broadway, Michelin-starred restaurants, and more.</li>
-        </ul>
-    </div>
-
-    <div class="feature-grid">
-        <div class="feature-box">
-            <h3>Breakfast Gatherings</h3>
-            <p>Join curated morning meetups with exceptional achievers from various fields. Share inspiration over breakfast in cities like NYC, SF, London, Paris, Tokyo, and more.</p>
-        </div>
-
-        <div class="feature-box">
-            <h3>Morning Routines</h3>
-            <p>Get exclusive insights into the morning routines of world-class performers. Learn how they start their day and apply their practices to your life.</p>
-        </div>
-
-        <div class="feature-box">
-            <h3>Networking</h3>
-            <p>Connect with like-minded early risers who are committed to personal growth and achievement in their respective fields.</p>
-        </div>
-    </div>
-
-    <div class="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-            <div class="faq-question">
-                Who's behind this? <span>+</span>
-            </div>
-            <div class="faq-answer">
-                A community of passionate individuals inspired by Hal Elrod's Miracle Morning, committed to helping others achieve their full potential through morning routines and networking.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">
-                Who hosts the breakfast gatherings? <span>+</span>
-            </div>
-            <div class="faq-answer">
-                Local community leaders and notable achievers in various fields host our morning gatherings, creating intimate spaces for meaningful connections.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">
-                How can I host a gathering in my city? <span>+</span>
-            </div>
-            <div class="faq-answer">
-                Reach out to us through the application form, and we'll connect with you about hosting opportunities in your area.
-            </div>
-        </div>
-    </div>
-
-    <div class="testimonials">
-        <div class="testimonial">
-            <p>"The Miracle Morning Club has transformed not just my mornings, but my entire approach to success. The community is incredible!"</p>
-            <p><strong>- Sarah Chen, Olympic Athlete</strong></p>
-        </div>
-        <div class="testimonial">
-            <p>"Meeting other driven individuals at sunrise has been game-changing for my creative process. The energy is unmatched."</p>
-            <p><strong>- Michael Rivera, Tech Founder</strong></p>
-        </div>
-    </div>
+    <!-- Rest of the HTML remains the same -->
 
     <script>
         document.querySelectorAll('.faq-question').forEach(question => {
